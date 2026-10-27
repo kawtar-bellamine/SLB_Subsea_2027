@@ -1,0 +1,8 @@
+method,rmse_m,p95_m,max_m,final_m,gate_rejections,gate_rejections_true_outliers,ml_dropped,heading_bias_est_deg,scale_err_est_pct
+dead reckoning,14.764,22.246,24.86,16.433,,,,,
+least squares per epoch,0.297,0.71,1.16,0.652,,,,,
+"EKF, position only",0.549,0.884,1.34,1.003,0.0,0.0,0.0,0.0,0.0
+"EKF, position only + NIS gate",14.276,22.095,23.81,7.086,1850.0,158.0,0.0,0.0,0.0
+EKF + DVL calibration,0.249,0.549,0.95,0.642,0.0,0.0,0.0,0.88,-0.13
+EKF + calibration + NIS gate,0.063,0.126,0.28,0.028,176.0,176.0,0.0,0.98,0.13
+EKF + calibration + gate + ML,0.064,0.126,0.28,0.028,11.0,11.0,187.0,0.98,0.13
